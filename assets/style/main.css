@@ -1,0 +1,310 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFF;
+    --black: #000000;
+    --gold-btn: linear-gradient(90deg, #CFA84D 0%, #F0D89E 48.5%, #CFA84D 100%);
+    --gold: #CFA84D;
+    --green: #061D0D;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+
+::selection {
+    background-color: var(--black);
+    color: var(--gold);
+}
+
+
+img {
+    display: block;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+svg {
+    display: block;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--black);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+button {
+    cursor: pointer;
+    border: none;
+    display: block;
+}
+
+.error {
+    border: 2px solid red !important;
+}
+
+.error-radio {
+    accent-color: red;
+}
+
+.container {
+    padding: 0 10px;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+.btn-section {
+    display: flex;
+    padding: 26px 35px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--gold-btn);
+    color: var(--black);
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.65px;
+    text-transform: uppercase;
+    position: relative;
+    border: none;
+}
+
+.btn-section:hover {
+    background-color: var(--gold);
+}
+
+.btn-section:focus {
+    background: linear-gradient(90deg, #716752 0%, #F0D89E 48.5%, #605336 100%);
+}
+
+
+
+
+.body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+.form-inner-wrap-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+}
+
+.form-inner-wrap {
+    padding: 34px 20px 43px 20px;
+    background-color: var(--green);
+    background-size: cover;
+    border-radius: 4px;
+}
+
+.form-input {
+    border-radius: 4px;
+    border: 2px solid #000;
+    background-color: #D9D9D9;
+    padding: 12px 8px;
+    width: 100%;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="number"]::placeholder,
+textarea::placeholder {
+    color: var(--black);
+}
+
+
+
+
+
+.textarea {
+    resize: none;
+}
+
+.form-btn {
+    margin: 35px 0 0 0;
+    position: relative;
+}
+
+.form-input-title {
+    margin: 0 0 8px 0;
+}
+
+.form {
+    margin: 40px 0 165px 0;
+}
+
+
+
+
+
+
+.btn-section.form-btn-i {
+    cursor: pointer;
+}
+
+.success-message-container {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.error-message-container {
+    color: red;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 375px;
+        padding: 0 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        padding: 0 32px;
+    }
+
+
+
+
+
+
+    .btn-section {
+        width: fit-content;
+    }
+
+
+
+
+
+
+
+    .form-inner-wrap-title {
+        font-size: 25px;
+        margin: 0 auto 45px auto;
+        width: 421.756px;
+
+    }
+
+    .form-inner-wrap {
+        padding: 63px 158px;
+    }
+
+    .form-input {
+        padding: 12px;
+    }
+
+    .form-btn-i {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .form-flex {
+        align-items: stretch;
+    }
+
+}
+
+@media screen and (min-width: 1204px) {
+    .container {
+        width: 1204px;
+        padding: 0 90px;
+    }
+
+
+
+    .form {
+        margin: 165px 0;
+    }
+
+    .form-input {
+        padding: 14px;
+    }
+
+    .form-inner-wrap-title {
+        width: 463px;
+        font-size: 25px;
+        margin: 0 auto 50px auto;
+    }
+
+    .form-inner-wrap {
+        padding: 74px 174px 80px 174px;
+    }
+
+
+
+}
